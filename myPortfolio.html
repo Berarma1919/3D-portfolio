@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 3D Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; 
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #d38e8e; 
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .project {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 580px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05); 
+        }
+
+        .project h2 {
+            color: #d38e8e; 
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        /* New section for 3D model */
+        #model-container {
+            width: 100%;
+            height: 250px; /* Adjust height as needed */
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1rem;
+            color: #555;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #f1f3f5; /* Light grey for the footer */
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #d38e8e; /* Soft pink for footer link */
+        }
+    </style>
+    <!-- Add Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Berarma Wafa Chahinez / G02</h1>
+            <p>3D Creations </p>
+        </header>
+        
+        <!-- Project 1 -->
+        <div class="project">
+            <h2>Project TP 1</h2>
+            <p>Cozy modern furniture, two leather chairs and one metallic table</p>
+            <img src="chair.png" alt="3D project 1">
+            
+            <a href="table.glb" download="Tp1.glb">Tp1 :Download 3D Model (.glb)</a>
+
+            <!-- 3D Model Section -->
+            <div id="model-container"><script src="app.js"></script></div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <h2>Projet TP 2</h2>
+            <p>Blender 3D chemical experiment: sulfur trioxide + water = sulfuric acid, causing heat and fog</p>
+            <img src="chemical.png" alt="3D project 2">
+            <video width="600" controls>
+                <source src="chemical.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <a href="tp2.blend" download="Tp2.blend">Tp2 :Download 3D Model (.blend)</a>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>Web 3D <a href="#">Prof. Douar</a> | 2024</p>
+        </footer>
+    </div>
+
+    <!-- Link to external JS file -->
+    
+    
+</body>
+</html>
